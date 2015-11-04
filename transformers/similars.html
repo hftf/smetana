@@ -1,0 +1,27 @@
+<section>
+$for(similars)$
+<aside>
+<h1>$similars.work$</h1>
+<!-- <button data-for="$similars.id$" class="fa fa-play"></button></h1> -->
+<h2><a href="composer/$similars.composer.last$">$similars.composer.first$ <span class="smcp">$similars.composer.last$</span></a></h2>
+
+<figure><div>
+<div class="score">
+	<object onload="fixwidth(this)" data="snippets/$similars.composer.last$/$similars.id$.svg" type="image/svg+xml"></object>
+<!-- <div><img src="snippets/$similars.composer.last$/$similars.id$.svg" /></div> -->
+<!-- <div><img src="snippets/$similars.composer.last$/$similars.id$.png" /></div> -->
+</div>
+
+<!-- <audio controls id="$similars.id$-mp3" src="snippets/$similars.composer.last$/$similars.id$.mp3"></audio> -->
+<!-- &amp;enablejsapi=1 -->
+<iframe id="$similars.id$-yt" width="200" height="150" src="https://www.youtube.com/embed/$similars.yt$" frameborder="0"></iframe>
+</div></figure>
+<div style="clear: both;"></div>
+</aside>
+
+$endfor$
+$if(body)$
+<!-- <h2>Description</h2> -->
+$body$
+$endif$
+</section>

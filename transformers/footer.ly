@@ -1,0 +1,9 @@
+
+\score {
+	\music
+
+	\layout {
+	}
+	\midi {
+	}
+}

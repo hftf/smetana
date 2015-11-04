@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Lyon Text';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Lyon Text Regular'), url('fonts/Lyon/Lyon Text-Regular.otf');
+}
+@font-face {
+    font-family: 'Lyon Text';
+    font-weight: 400;
+    font-style: italic;
+    src: local('Lyon Text Regular Italic'), url('fonts/Lyon/Lyon Text-Regular Italic.otf');
+}
+@font-face {
+    font-family: 'Lyon Text';
+    font-weight: 600;
+    font-style: normal;
+    src: local('Lyon Text Semibold'), url('fonts/Lyon/Lyon Text-Semibold.otf');
+}
+@font-face {
+    font-family: 'Lyon Text';
+    font-weight: 600;
+    font-style: italic;
+    src: local('Lyon Text Semibold Italic'), url('fonts/Lyon/Lyon Text-Semibold Italic.otf');
+}
+@font-face {
+    font-family: 'Lyon Text';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Lyon Text Bold'), url('fonts/Lyon/Lyon Text-Bold.otf');
+}
+@font-face {
+    font-family: 'Lyon Text';
+    font-weight: 700;
+    font-style: italic;
+    src: local('Lyon Text Bold Italic'), url('fonts/Lyon/Lyon Text-Bold Italic.otf');
+}
