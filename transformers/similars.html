@@ -1,18 +1,20 @@
 <section>
 $for(similars)$
-<aside>
-<h1>$similars.work$</h1>
-<h2><a href="composer/$similars.composer.last$">$similars.composer.first$ <span class="smcp">$similars.composer.last$</span></a></h2>
+	<aside>
+		<h1>$similars.work$</h1>
+		<h2>
+			<a href="composer/$similars.composer.last$">$similars.composer.first$ <span class="smcp">$similars.composer.last$</span></a>
+		</h2>
 
-<figure><div>
-<div class="score">
-	<object onload="fixwidth(this)" data="snippets/$similars.composer.last$/$similars.id$.svg" type="image/svg+xml"></object>
-</div>
+		<figure><div>
+			<div class="score">
+				<object onload="fixwidth(this)" data="snippets/$similars.composer.last$/$similars.id$.svg" type="image/svg+xml"></object>
+			</div>
 
-<iframe id="$similars.id$-yt" width="200" height="150" src="https://www.youtube.com/embed/$similars.yt$" frameborder="0"></iframe>
-</div></figure>
-<div style="clear: both;"></div>
-</aside>
+			<iframe id="$similars.id$-yt" width="200" height="150" src="https://www.youtube.com/embed/$similars.yt$" frameborder="0"></iframe>
+		</div></figure>
+		<div style="clear: both;"></div>
+	</aside>
 
 $endfor$
 $if(body)$
