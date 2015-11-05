@@ -1,6 +1,6 @@
 all.html
 assets/fonts
-similars/*.html
+contents/**/*.html
 snippets/*/*.midi
 snippets/*/*.mp3
 transformers/old

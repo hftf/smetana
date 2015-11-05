@@ -2,7 +2,8 @@
 
 SNIPPETS_DIR:=snippets/
 SNIPPETS:=$(wildcard $(SNIPPETS_DIR)*/*.ly)
-SIMILARS_DIR:=similars/
+CONTENTS_DIR:=contents/
+SIMILARS_DIR:=$(CONTENTS_DIR)similars/
 SIMILARS:=$(wildcard $(SIMILARS_DIR)*.md)
 HTMLS:=$(SIMILARS:.md=.html)
 FORMATS=$(SNIPPETS:.ly=.$(1))
@@ -21,7 +22,7 @@ clean:
 all.html: transformers/header.html $(HTMLS) transformers/footer.html
 	cat $^ > $@
 
-similars/%.html: similars/%.md transformers/similars.html
+$(SIMILARS_DIR)%.html: $(SIMILARS_DIR)%.md transformers/similars.html
 	pandoc -o $@ $< --template $(word 2,$^) \
 		-s \
 		-f markdown+hard_line_breaks
