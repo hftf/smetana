@@ -10,6 +10,11 @@ FORMATS=$(SNIPPETS:.ly=.$(1))
 SVGS:=$(call FORMATS,svg)
 MP3S:=$(call FORMATS,mp3)
 
+CONTENTS:=\
+	transformers/header.html        \
+	$(HTMLS)                        \
+	transformers/footer.html
+
 # first: snippets/Debussy/fan.svg
 all: all.html svgs
 more: all mp3s
@@ -19,7 +24,7 @@ mp3s: $(MP3S)
 clean:
 	rm -vf similars.html $(SVGS) $(MP3S) $(call FORMATS,midi) $(call FORMATS,ly.wrap)
 
-all.html: transformers/header.html $(HTMLS) transformers/footer.html
+all.html: $(CONTENTS)
 	cat $^ > $@
 
 $(SIMILARS_DIR)%.html: $(SIMILARS_DIR)%.md transformers/similars.html
