@@ -41,6 +41,14 @@ p + p {
 	text-indent: 1em;
 }
 
+header {
+	text-align: center;
+	margin-bottom: 2em;
+}
+header h1 {
+	font-size: 24px;
+}
+
 section {
 	border-top: 4px solid black;
 	padding-top: 2px;
@@ -71,8 +79,10 @@ figure > div .score {
 }
 
 abbr {
-	border-bottom: 1px dotted;
 	text-transform: lowercase;
+}
+abbr[title] {
+	border-bottom: 1px dotted;
 }
 abbr, .smcp {
 	-webkit-font-feature-settings: 'smcp' 1;

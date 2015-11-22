@@ -12,6 +12,7 @@ MP3S:=$(call FORMATS,mp3)
 
 CONTENTS:=\
 	transformers/header.html        \
+	$(CONTENTS_DIR)preface.html    \
 	$(HTMLS)                        \
 	transformers/footer.html
 
@@ -26,6 +27,9 @@ clean:
 
 all.html: $(CONTENTS)
 	cat $^ > $@
+
+$(CONTENTS_DIR)%.html: $(CONTENTS_DIR)%.md
+	pandoc -o $@ $<
 
 $(SIMILARS_DIR)%.html: $(SIMILARS_DIR)%.md transformers/similars.html
 	pandoc -o $@ $< --template $(word 2,$^) \
