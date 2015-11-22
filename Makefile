@@ -54,4 +54,4 @@ $(SIMILARS_DIR)%.html: $(SIMILARS_DIR)%.md transformers/similars.html
 	rm $*.preview.svg
 
 upload:
-	rsync -R --iconv=utf-8-mac,utf-8 *.html assets/*.* snippets/*/*.svg gwinnett:~/ophir.li/music/similars
+	rsync -R --iconv=utf-8-mac,utf-8 *.html assets/*.* snippets/*/*.svg gwinnett:~/ophir.li/music/smetana
