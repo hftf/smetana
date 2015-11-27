@@ -9,8 +9,8 @@ similars:
 - id: june
   work: "_The Seasons_, No. 6: June: Barcarolle"
   composer:
-  	first: Peter
-  	last: Tchaikovsky
+    first: Peter
+    last: Tchaikovsky
   yt: f0DdQ-uOsTs?start=6
 - id: gym1
   work: Gymnopédie No. 1

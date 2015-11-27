@@ -3,14 +3,14 @@ similars:
 - id: clair
   work: Clair de lune
   composer:
-  	first: Claude
-  	last: Debussy
+    first: Claude
+    last: Debussy
   yt: ZIsQPdC9YnY?start=78
 - id: orn4
   work: Piano Sonata No. 4
   composer:
-  	first: Leo
-  	last: Ornstein
+    first: Leo
+    last: Ornstein
   yt: t6-oVoTBACw?start=77
 ---
 
