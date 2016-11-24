@@ -28,13 +28,13 @@ clean:
 all.html: $(CONTENTS)
 	cat $^ > $@
 
-$(CONTENTS_DIR)%.html: $(CONTENTS_DIR)%.md
-	pandoc -o $@ $<
-
 $(SIMILARS_DIR)%.html: $(SIMILARS_DIR)%.md transformers/similars.html
 	pandoc -o $@ $< --template $(word 2,$^) \
 		-s \
 		-f markdown+hard_line_breaks
+
+$(CONTENTS_DIR)%.html: $(CONTENTS_DIR)%.md
+	pandoc -o $@ $<
 
 %.mp3: %.midi
 	timidity $< -Ow -o - | lame - $@
