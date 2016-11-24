@@ -11,7 +11,7 @@ similars:
   composer:
     first: Leo
     last: Ornstein
-  yt: t6-oVoTBACw?start=77
+  yt: iZWZ8XLdr3A?start=78
 ---
 
 > A little bit of everything. His language ran the gamut from extremely conventional tonality to the harshest dissonances, and he explored all variations within these extremes according to what he wanted to express, and how.
