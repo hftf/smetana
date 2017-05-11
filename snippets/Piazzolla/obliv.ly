@@ -11,8 +11,7 @@ music = {
 		fontSize = #-2
 		\override StaffSymbol #'staff-space = #(magstep -2)
 	} <<
-		\new Staff { 
-			\set Score.skipBars = ##t
+		\new Staff {
 			\set Staff.instrument = \markup { "Violin" }
 			\set Staff.midiInstrument = #"violin"
 			\clef treble \global
@@ -20,9 +19,8 @@ music = {
 				c1 ~ c ~ c ~ c ~ c\fermata \bar "|."
 			}
 		}
-		\new Dynamics { s1\p s s4 s2.\rall s1 s4 s2.\> s\!}
-		\new Staff { 
-			\set Score.skipBars = ##t
+		\new Dynamics { s1\p s s4 s2.\rall s1 s4 s2.\> s\! }
+		\new Staff {
 			\set Staff.instrument = \markup { "Cello" }
 			\set Staff.midiInstrument = #"cello"
 			\clef bass \global
@@ -35,11 +33,10 @@ music = {
 
 			}
 		}
-		\new Dynamics { s1\p s s4 s2.\rall s1 s4 s2.\> s\!}
+		\new Dynamics { s1\p s s4 s2.\rall s1 s4 s2.\> s\! }
 		\new Dynamics { s-\hide\p } % TODO ugly
 	>>
 	\new PianoStaff <<
-		\set Score.skipBars = ##t
 		\set PianoStaff.instrument = \markup { "Pianoforte." }
 		\set PianoStaff.midiInstrument = #"acoustic grand"
 		\context Staff = upper \relative a {
@@ -50,7 +47,7 @@ music = {
 			<as, as'>( es' c) <g g'>( es' c) <f, f'>( c') |
 			<as c d g>1\arpeggio\fermata
 		}
-		\new Dynamics { s1\pp s s4 s2.\rall s1 s4 s2.\> s\!}
+		\new Dynamics { s1\pp s s4 s2.\rall s1 s4 s2.\> s\! }
 		\context Staff = lower \relative a,, {
 			\clef bass \global
 			c4. as'8 as4 g |

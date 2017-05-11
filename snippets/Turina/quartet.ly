@@ -14,7 +14,6 @@ music = {
 		fontSize = #-2
 		\override StaffSymbol #'staff-space = #(magstep -2)
 	} { 
-		\set Score.skipBars = ##t
 		\set Staff.instrument = \markup { "Violin" }
 		\set Staff.midiInstrument = #"violin"
 		\clef treble \global
@@ -30,7 +29,6 @@ music = {
 		fontSize = #-2
 		\override StaffSymbol #'staff-space = #(magstep -2)
 	} { 
-		\set Score.skipBars = ##t
 		\set Staff.instrument = \markup { "Viola" }
 		\set Staff.midiInstrument = #"violin"
 		\clef alto \global
@@ -44,7 +42,6 @@ music = {
 		fontSize = #-2
 		\override StaffSymbol #'staff-space = #(magstep -2)
 	} { 
-		\set Score.skipBars = ##t
 		\set Staff.instrument = \markup { "Cello" }
 		\set Staff.midiInstrument = #"cello"
 		\clef bass \global
@@ -53,7 +50,6 @@ music = {
 		}
 	}
 	\new PianoStaff <<
-		\set Score.skipBars = ##t
 		\set PianoStaff.instrument = \markup { "Pianoforte." }
 		\set PianoStaff.midiInstrument = #"acoustic grand"
 		\context Staff = upper \relative a' {
